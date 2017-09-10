@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>the Todo</title>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="well">
+            <div class="overflow">
+                <h1>Todo list</h1>
+                <hr>
+                <form class="form-horizontal">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label class="control-label" for="today">Datum </label>
+                            <input class="form-control" id="today" type="date" name="today" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="best-before">Bäst före </label>
+                            <input class="form-control" id="bestBefore" type="date" name="best-before" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="headline">Rubrik </label>
+                            <input class="form-control" id="headline" type="text" name="headline">
+                            <div id="head-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="todoItem">Att göra </label>
+                            <textarea class="form-control" id="todoItem" rows="4" name="todoItem"></textarea>
+                            <div id="todo-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <input class="btn btn-success" type="button" id="submit" value="Spara" />
+                            <br>
+                            <br>
+                            <a id="clear" href="#">Rensa</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-md-6 col-md-offset-1">
+                    <ul id="addedItems">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='js/todo.js'></script>
+</body>
+
+</html>

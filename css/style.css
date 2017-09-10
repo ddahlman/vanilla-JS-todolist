@@ -1,0 +1,33 @@
+.overflow {
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+#addedItems li .well {
+    background-color: #fff;
+}
+
+#head-error,
+#todo-error {
+    color: #ff0000;
+}
+
+.expired {
+    border: 2px solid #a94442;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.warning {
+    border: 2px solid #8a6d3b;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+
+/*.list-group-item {
+    padding: 15px;
+}*/
