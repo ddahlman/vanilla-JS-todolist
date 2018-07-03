@@ -27,6 +27,7 @@
             today: document.querySelector('#today').value,
         };
 
+
         if (obj.headline === '' || obj.todoItem[0] === '') {
             headerror.innerHTML = "Rubrik krävs!";
             todoerror.innerHTML = "Du behöver fylla i vad du vill göra!";
